@@ -12,9 +12,11 @@ before_install:
       sudo apt-get install -qq
           emacs-snapshot-el emacs-snapshot-gtk emacs-snapshot;
     fi
+
 env:
   matrix:
     - EMACS=emacs24
     - EMACS=emacs-snapshot
+
 script:
   make travis-ci EMACS=$EMACS
