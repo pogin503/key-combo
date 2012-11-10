@@ -1,6 +1,6 @@
-ifndef EMACS
-	EMACS=emacs
-endif
+# ifndef EMACS
+# 	EMACS=emacs
+# endif
 
 travis-ci:
 	${EMACS} --version
